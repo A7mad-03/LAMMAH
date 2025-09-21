@@ -17,15 +17,14 @@ logo_base64 = load_logo(logo_path)
 # --------------------------------
 # Load Models + Vectorizers
 # --------------------------------
-sentiment_model = joblib.load(r"sentiment\sentiment_model.pkl")
-sentiment_vectorizer = joblib.load(r"sentiment\vectorizer.pkl")
+sentiment_model = joblib.load("sentiment/sentiment_model.pkl")
+sentiment_vectorizer = joblib.load("sentiment/vectorizer.pkl")
 
-article_model = joblib.load(r"artical\model.pkl")
-article_vectorizer = joblib.load(r"artical\vectorizer.pkl")
+article_model = joblib.load("artical/model.pkl")
+article_vectorizer = joblib.load("artical/vectorizer.pkl")
 
-dialect_model = joblib.load(r"accents\model2.pkl")
-dialect_vectorizer = joblib.load(r"accents\vectorizer.pkl")
-
+dialect_model = joblib.load("accents/model2.pkl")
+dialect_vectorizer = joblib.load("accents/vectorizer.pkl")
 # Labels
 sentiment_labels = {0: "سلبي", 1: "إيجابي"}
 article_labels = {0: "ثقافة", 1: "تنوع", 2: "اقتصاد", 3: "سياسة", 4: "رياضة"}
